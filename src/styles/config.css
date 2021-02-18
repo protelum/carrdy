@@ -1,0 +1,36 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --black: #1a1a1a;
+  --grey: #efefef;
+  --purple: #4f4789;
+  --tuscany: #e7856e;
+  --yellow: #fce762;
+  --blue: #bad7f2;
+  --disabled: #a7a7a7;
+
+  --heading-1-size: 32px;
+  --heading-1-height: 40px;
+  
+  --heading-2-size: 28px;
+  --heading-2-height: 32px;
+
+  --heading-3-size: 24px;
+  --heading-3-height: 28px;
+  
+  --text-large-size: 20px;
+  --text-large-height: 24px;
+
+  --text-medium-size: 16px;
+  --text-medium-height: 20px;
+
+  --text-small-size: 12px;
+  --text-small-height: 16px;
+
+  --time: 0.2s;
+}

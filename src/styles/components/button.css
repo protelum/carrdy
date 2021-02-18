@@ -1,0 +1,37 @@
+.button {
+  min-width: 200px;
+  text-align: center;
+  border-radius: 4px;
+  border: 0px;
+  padding: 10px;
+  outline: none;
+  color: var(--grey);
+}
+
+.button:hover {
+  opacity: 88%;
+  cursor: pointer;
+}
+
+.button:focus {
+  box-shadow: 0 0 0 2px var(--black);
+}
+
+.button-primary {
+  background-color: var(--purple);
+}
+
+.button-secondary {
+  background-color: var(--tuscany);
+}
+
+.button:disabled,
+.button-primary:disabled,
+.button-secondary:disabled {
+  background-color: var(--disabled);
+  cursor: not-allowed;
+}
+
+.button:disabled:hover {
+  opacity: 100%;
+}
