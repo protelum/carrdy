@@ -1,4 +1,5 @@
 import React from 'react';
+import EachCard from '../EachCard';
 
 // importing styles like this ensures that
 // styles dont clash
@@ -12,10 +13,12 @@ const CardComponent = (props) => {
 	// value doesn't exist
     const { mainArray } = props;
 	return (
-		<p >
-			The time currently is{' '}
-			<span>{mainArray.pop().title}</span>
-		</p>
+		<div>
+			{mainArray.map((eachCard, index) => (
+				<EachCard title = {eachCard.title} content = {eachCard.content}/>
+			))}
+			{/* <EachCard title = {mainArray.pop().title} content = {mainArray.pop().content}/> */}
+		</div>
 	);
 };
 
