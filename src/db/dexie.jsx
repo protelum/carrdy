@@ -11,6 +11,6 @@ db.open().catch(function (e) {
     console.error("Open failed: " + e);
 });
 
-db.card.add({title: "Test Card", content: "Let's have the content here"});
+// db.card.add({title: "Test Card", content: "Let's have the content here"});
 
 export default db;

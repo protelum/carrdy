@@ -6,8 +6,6 @@ const EachCardData = (props) => {
 	// This is the Controller Section
 
 	const {title, content} = props;
-	console.log(title);
-	console.log(content);
 
   // Pass data as props to the View Component
 	return <EachCardView title={title} content = {content}/>;
