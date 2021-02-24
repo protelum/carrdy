@@ -14,7 +14,7 @@ const CardComponent = (props) => {
     const { data } = props;
 	return (
 		<div>
-			{data.map((eachCard, index) => (
+			{data.map((eachCard) => (
 				<EachCard title = {eachCard.title} content = {eachCard.content}/>
 			))}
 			{/* <EachCard title = {mainArray.pop().title} content = {mainArray.pop().content}/> */}
