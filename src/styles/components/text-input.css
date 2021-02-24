@@ -1,0 +1,19 @@
+.text-input {
+  background-color: var(--grey);
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--black);
+  transition-duration: var(--time);
+  max-width: 250px;
+  width: 100%;
+}
+
+.text-input::placeholder {
+  font-style: italic;
+  color: var(--black);
+}
+
+.text-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px inset var(--black);
+}

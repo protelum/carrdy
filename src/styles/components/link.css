@@ -1,0 +1,18 @@
+.link {
+  color: var(--tuscany);
+  text-decoration: none;
+  font-weight: bold;
+  transition-duration: var(--time);
+  border-bottom: 2px solid transparent;
+}
+
+.link::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: ' \f105';
+}
+
+.link:hover {
+  border-bottom: 2px solid var(--tuscany);
+  transition-duration: var(--time);
+}

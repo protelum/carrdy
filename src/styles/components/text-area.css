@@ -1,0 +1,22 @@
+.text-area {
+  background-color: var(--grey);
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--black);
+  transition-duration: var(--time);
+  max-width: 350px;
+  
+  height: 200px;
+  width: 100%;
+  resize: none;
+}
+
+.text-area::placeholder {
+  font-style: italic;
+  color: var(--black);
+}
+
+.text-area:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px inset var(--black);
+}
