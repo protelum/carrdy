@@ -5,16 +5,14 @@ import db from '../../db/dexie';
 
 const CardComponentData = () => {
 
-	const [data, setData] = useState("");
-	const [complete, setComplete] = useState(false);
+	const [data, setData] = useState(null);
 
 	useEffect(async () => {
 		const result = await db.card.toArray();
 		setData(result);
-		setComplete(true)
 	},[]);
 
-	return complete && <CardComponentView mainArray = {data}/>;
+	return (data!=null) && <CardComponentView mainArray = {data} />
 };
 
 export default CardComponentData;
