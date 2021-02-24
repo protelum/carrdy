@@ -11,10 +11,10 @@ const CardComponent = (props) => {
 	// It makes it easier to add default values
 	// because we wouldn't need to check if the
 	// value doesn't exist
-    const { mainArray } = props;
+    const { data } = props;
 	return (
 		<div>
-			{mainArray.map((eachCard, index) => (
+			{data.map((eachCard, index) => (
 				<EachCard title = {eachCard.title} content = {eachCard.content}/>
 			))}
 			{/* <EachCard title = {mainArray.pop().title} content = {mainArray.pop().content}/> */}

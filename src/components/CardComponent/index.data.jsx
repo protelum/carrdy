@@ -12,7 +12,7 @@ const CardComponentData = () => {
 		setData(result);
 	},[]);
 
-	return (data!=null) && <CardComponentView mainArray = {data} />
+	return (data!=null) && <CardComponentView data = {data} />
 };
 
 export default CardComponentData;
